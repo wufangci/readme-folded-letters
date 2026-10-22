@@ -20,7 +20,7 @@
 |---|---|---|---|
 | 09 | Z 字三折，信切成三塊各落一格 | 🟢 第一封定稿 | `04_active/09-zfold-three-panels/` |
 
-v01–v06 沒有保留檔案，改了什麼記在 `06_process/DECISIONS.md`。
+v01–v08 沒有保留檔案，改了什麼記在 `06_process/DECISIONS.md`。
 
 ## 已捨棄的方案
 
@@ -30,8 +30,8 @@ v01–v06 沒有保留檔案，改了什麼記在 `06_process/DECISIONS.md`。
 | 換行畫成 `↵` | 只留 ID（v05） |
 | 背面寫「親愛的人工智慧」 | `#README` 的 token（v06） |
 | 每行各自置中 | 靠左對齊（v04） |
-| 信紙三折（`90_archive/07-letter-fold`） | Z 字三折（v09） |
-| 對開門摺（`90_archive/08-gate-fold`） | Z 字三折（v09） |
+| 信紙三折 | Z 字三折（v09） |
+| 對開門摺 | Z 字三折（v09） |
 | 整塊內文跨過摺線 | 三塊各落一格（v09） |
 
 規格見 `01_source/SPECS.md`。
