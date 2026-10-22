@@ -1,0 +1,8 @@
+{
+  "name": "readme-folded-letters",
+  "private": true,
+  "description": "README：一封寫給人工智慧的家書 — 信的裝置（Z 字三折 token 信）",
+  "dependencies": {
+    "gpt-tokenizer": "2.9.0"
+  }
+}
