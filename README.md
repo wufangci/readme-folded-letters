@@ -1,6 +1,6 @@
 # readme-folded-letters
 
-這個 repo 是〈README：一封寫給人工智慧的家書〉的**信的裝置**：把信切成 token、每個 token 標上 ID，印在 A4 上、摺成 Z 字三折，讓觀眾帶走。信拆成四個片段，所以有四種樣式。目前**第一封已定稿**，其他三封還沒排。
+這個 repo 是〈README：一封寫給人工智慧的家書〉的**信的裝置**：把信切成 token、每個 token 標上 ID，印在 A4 上、摺成 Z 字三折，讓觀眾帶走。信依原文的 `---` 分成六封（最後一段併入第六封），整封信都印進去。目前**第一封定稿**，第二到第六封**暫定**。
 
 - 作品本體（信與 skill）：[wufangci/README](https://github.com/wufangci/README)
 - token 動畫：[wufangci/readme-token-animation](https://github.com/wufangci/readme-token-animation)
@@ -11,7 +11,7 @@
 
 | 檔案 | 用途 |
 |---|---|
-| [`00_PRODUCTION_BOARD.md`](00_PRODUCTION_BOARD.md) | 製作總表：四封信的狀態、版本、下一步 |
+| [`00_PRODUCTION_BOARD.md`](00_PRODUCTION_BOARD.md) | 製作總表：六封信的狀態、版本、下一步 |
 | [`SESSION_HANDOFF.md`](SESSION_HANDOFF.md) | 交接：上次做到哪、下次從哪開始 |
 | [`AGENTS.md`](AGENTS.md) | 給 AI 的常用記憶：規則、偏好、工作習慣 |
 
@@ -21,7 +21,7 @@
 |---|---|
 | `01_source/` | 規格：分詞、紙張、摺法、正反面版面 |
 | `03_assets/` | 素材：QR code |
-| `04_active/` | 主線：目前定稿的版本（09，Z 字三折） |
+| `04_active/` | 主線：目前的版本（09，Z 字三折，六封） |
 | `05_tools/` | 工具：切 token |
 | `06_process/` | 創作歷程：決策紀錄、每次工作摘要 |
 | `out/` | 輸出（不進 git） |
@@ -35,12 +35,12 @@ npm ci
 pip install playwright pillow && playwright install chromium
 
 node 05_tools/tokenize_letter.js ../README/LETTER.md out/letter_parts.json
-python3 04_active/09-zfold-three-panels/build.py 1     # → out/README_letter_01_z.pdf
+python3 04_active/09-zfold-three-panels/build.py       # 六封 → out/README_letters_all_z.pdf
 ```
 
 ## 列印與摺法
 
-A4 雙面列印（長邊翻頁），白底。token 面朝上，上三分之一往前摺、下三分之一往後摺。摺好是 210 × 99 mm。示意圖見 [`04_active/09-zfold-three-panels/stills/fold.png`](04_active/09-zfold-three-panels/stills/fold.png)。
+A4 雙面列印（長邊翻頁），白底。token 面朝上，上三分之一往前摺、下三分之一往後摺。摺好是 210 × 99 mm。示意圖見 [`04_active/09-zfold-three-panels/stills/01/fold.png`](04_active/09-zfold-three-panels/stills/01/fold.png)。六封合成一份的 PDF：[`README_letters_all_z.pdf`](04_active/09-zfold-three-panels/README_letters_all_z.pdf)。
 
 ## 授權
 

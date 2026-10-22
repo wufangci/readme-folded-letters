@@ -5,7 +5,7 @@
 
 ## 這是什麼
 
-〈README：一封寫給人工智慧的家書〉的信的裝置：信切成 token、標上 ID，印成 A4、摺成 Z 字三折，觀眾帶走。信拆成四個片段，四種樣式。
+〈README：一封寫給人工智慧的家書〉的信的裝置：信切成 token、標上 ID，印成 A4、摺成 Z 字三折，觀眾帶走。信依原文的 `---` 分成六封（最後一段併入第六封），整封信都印進去。
 
 - 作品本體（信與 skill）：https://github.com/wufangci/README
 - token 動畫：https://github.com/wufangci/readme-token-animation
@@ -16,7 +16,7 @@
 ## 開始工作前
 
 1. 讀 `SESSION_HANDOFF.md`：上次做到哪、還有什麼沒決定。
-2. 讀 `00_PRODUCTION_BOARD.md`：四封信的狀態。
+2. 讀 `00_PRODUCTION_BOARD.md`：六封信的狀態。
 3. 規格看 `01_source/SPECS.md`；需要背景時，再看 `06_process/DECISIONS.md`。
 
 ## 必須遵守
@@ -34,13 +34,15 @@
 - 內文靠左對齊，整塊置中；字級 8pt。
 - 換行不畫符號，只留 ID。
 - 信照段落切成三塊，各自落在一格裡，摺線不切過文字。
+- 露在外面的那一格照原文順序，露出什麼就是什麼，不為了放提問而調換段落。
 - 封面要乾淨：`#README` 的 token 在中間，QR code 小、放角落。
 - 紙張白底。
 
 ## 工作習慣
 
 - 改版時先排一張給作者看（PDF＋截圖），作者說定了才寫進 repo。
-- 摺法有變動時，附上摺法示意圖（`stills/fold.png`），示意圖背景用中性淺灰。
+- 摺法有變動時，附上摺法示意圖（`stills/NN/fold.png`），示意圖背景用中性淺灰。
+- 段落之間多出來的單獨換行 token 接在上一行行尾，不另起一行（和第一封的換行樣子一致）。
 - 新版本：
   1. 在 `04_active/` 開新資料夾，延續編號（下一個是 10）；
   2. 附上 `README.md` 和 `stills/`；
